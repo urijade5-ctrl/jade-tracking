@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parcel Tracking System</title>
+
+<style>
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- GLOBAL ---------- */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    font-weight: 500;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    background: linear-gradient(rgba(13,71,161,0.8), rgba(13,71,161,0.8)),
+                url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* ---------- TRACKING BOX ---------- */
+.tracking-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tracking-box h2 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.tracking-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.tracking-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #0d47a1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tracking-box button:hover {
+    background: #08306b;
+}
+
+/* ---------- FEATURES ---------- */
+.features {
+    padding: 70px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0d47a1;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #0d47a1;
+}
+
+.feature-card p {
+    font-size: 15px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #0d47a1;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container nav">
+        <div class="logo">📦 ParcelTrack</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Track</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+        <h1>Fast & Reliable Parcel Tracking</h1>
+        <p>Track your shipment anytime, anywhere in real-time</p>
+
+        <div class="tracking-box">
+            <h2>Track Your Parcel</h2>
+            <input type="text" placeholder="Enter Tracking Number">
+            <button>Track Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="container">
+        <h2>Why Choose Us?</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Real-Time Tracking</h3>
+                <p>Monitor your parcel status with live updates.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Secure Delivery</h3>
+                <p>Your packages are handled safely and securely.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Nationwide Coverage</h3>
+                <p>We deliver parcels across cities and provinces.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>24/7 Support</h3>
+                <p>Our support team is always ready to help.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>© 2026 ParcelTrack System | All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
